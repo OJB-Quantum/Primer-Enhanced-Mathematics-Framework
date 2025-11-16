@@ -34,12 +34,12 @@ A Sort of Zero-Assumption Graduated Mathematics Framework (ZGMF) by Onri Jay Ben
 │   ├─ C. Assumption track (local & global assumptions)
 │   ├─ D. Data & cost track (error metrics, datasets)
 │   ├─ E. Multi-model track (families of models)
-│   └─ F. Bridge track (discrete ↔ continuous, classical ↔ quantum)
+│   └─ F. Bridge track (discrete <--> continuous, classical <--> quantum)
 │
 ├─ III. Authoring Standard (like PEPs)
 │   ├─ A. Naming & symbol conventions
 │   ├─ B. Recommended grouping-symbol patterns
-│   ├─ C. Pseudo-math templating (English ↔ symbols)
+│   ├─ C. Pseudo-math templating (English <--> symbols)
 │   ├─ D. Example minimal-topic template
 │   └─ E. Review checklist (clarity, cost, data, bridges)
 │
@@ -500,7 +500,7 @@ Structural Tracks
 ├─ C. Assumption track (local & global assumptions)
 ├─ D. Data & cost track (error metrics, datasets)
 ├─ E. Multi-model track (families of models)
-└─ F. Bridge track (discrete ↔ continuous, classical ↔ quantum)
+└─ F. Bridge track (discrete <--> continuous, classical <--> quantum)
 ```
 
 ### A. Notation Track (Symbols, Units, Roles)
@@ -573,7 +573,7 @@ Multi-model track – ingredients
 
 Constant acceleration is a special case in a broader family of motion models (e.g., variable acceleration, harmonic motion, relativistic motion). The track also discusses how a simpler model can act as a surrogate for a more complex one within a limited regime.
 
-### F. Bridge Track (Discrete ↔ Continuous, Classical ↔ Quantum)
+### F. Bridge Track (Discrete <--> Continuous, Classical <--> Quantum)
 
 The Bridge Track highlights **connections across domains and scales**.
 
@@ -597,7 +597,7 @@ The Authoring Standard defines how to *write* content in this framework: naming,
 Authoring Standard
 ├─ A. Naming & symbol conventions
 ├─ B. Recommended grouping-symbol patterns
-├─ C. Pseudo-math templating (English ↔ symbols)
+├─ C. Pseudo-math templating (English <--> symbols)
 ├─ D. Example minimal-topic template
 └─ E. Review checklist
 ```
@@ -628,7 +628,7 @@ Grouping patterns – guidance
 
 Expressions such as $(x + 5) + (y - 2)$ map neatly from English "sum of (x plus 5) and (y minus 2)".
 
-### C. Pseudo-Math Templating (English ↔ Symbols)
+### C. Pseudo-Math Templating (English <--> Symbols)
 
 ```text
 Pseudo-math templating – steps
