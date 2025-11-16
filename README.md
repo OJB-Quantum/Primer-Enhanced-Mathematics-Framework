@@ -622,9 +622,18 @@ Grouping patterns – guidance
 ├─ Use parentheses liberally to clarify structure
 ├─ Use () inside [] inside {} for nested groupings
 ├─ Group each English chunk when translating (e.g., (sum of x and y))
-├─ Be explicit in fractions: (a + b) / (c + d)
-└─ Use standard brace notation for piecewise definitions
+├─ Be explicit in fractions: (a + b)/ (c + d)
+├─ Use standard brace notation for piecewise definitions
+└─ Use underbrace to label parts of an expression 
 ```
+
+**Examples of underbrace usage**
+
+* $\underbrace{(x+y)}_{\text{group}} \times z = xz + yz$
+
+* $\underbrace{a^{2}+b^{2}}_{\text{Pythagorean sum}} = c^{2}$
+
+These illustrate how the underbrace can annotate a sub‑expression while keeping the surrounding notation clear.
 
 Expressions such as $(x + 5) + (y - 2)$ map neatly from English "sum of (x plus 5) and (y minus 2)".
 
@@ -887,3 +896,6 @@ For example, a topic on vector fields might link to open-access vector calculus 
 18. A physics and data co-driven surrogate modeling method for high-dimensional rare event simulation – <https://arxiv.org/abs/2310.00261>
 19. Classical-Quantum correspondence in Lindblad evolution – <https://arxiv.org/abs/2403.09345>
 20. Considerations about the incompleteness of the Ehrenfest’s theorem in quantum mechanics – <https://arxiv.org/abs/2011.04038>
+
+
+Full script goes to line 890
