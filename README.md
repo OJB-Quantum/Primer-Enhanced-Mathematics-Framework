@@ -9,6 +9,7 @@ Overview: This framework is a comprehensive standard for building math education
 ## A Sort of Zero‑Assumption Graduated Mathematics Framework (ZGMF) v1.0
 
 **Author:** Onri Jay Benally
+
 **Scope:** From 6th‑grade arithmetic intuition to graduate‑level, research‑adjacent mathematics.
 
 ---
