@@ -32,12 +32,12 @@ Overview: This framework is a comprehensive standard for building math education
 │   ├─ C. Assumption track (local & global assumptions)
 │   ├─ D. Data & cost track (error metrics, datasets)
 │   ├─ E. Multi-model track (families of models)
-│   └─ F. Bridge track (discrete ↔ continuous, classical ↔ quantum)
+│   └─ F. Bridge track (discrete <--> continuous, classical <--> quantum)
 │
 ├─ III. Authoring Standard (like PEPs)
 │   ├─ A. Naming & symbol conventions
 │   ├─ B. Recommended grouping-symbol patterns
-│   ├─ C. Pseudo-math templating (English ↔ symbols)
+│   ├─ C. Pseudo-math templating (English <--> symbols)
 │   ├─ D. Example minimal-topic template
 │   └─ E. Review checklist (clarity, cost, data, bridges)
 │
@@ -159,7 +159,7 @@ We next clarify how to read mathematical notation in a consistent, structured wa
 │  ├─ Parentheses ( ) for tight grouping
 │  ├─ Brackets [ ] for outer grouping
 │  └─ Braces { } for sets & piecewise cases
-├─ Structured English ↔ symbolic forms
+├─ Structured English <--> symbolic forms
 │  ├─ “sum of (x and y)” --> (x) + (y)
 │  ├─ “product of (x and y)” --> (x) × (y)
 │  └─ “ratio of (x to y)” --> (x) / (y)
@@ -537,7 +537,7 @@ Structural Tracks
 ├─ C. Assumption track (local & global assumptions)
 ├─ D. Data & cost track (error metrics, datasets)
 ├─ E. Multi‑model track (families of models & hybrid polynomials)
-└─ F. Bridge track (discrete↔continuous, classical↔quantum, models↔surrogates)
+└─ F. Bridge track (discrete<-->continuous, classical<-->quantum, models<-->surrogates)
 ```
 
 ### A. Notation Track (Symbols, Units, Roles)
@@ -679,21 +679,21 @@ Model‑to‑Model Interpolation
 This reflects realistic workflows where multiple candidate models compete or are
 combined.
 
-### F. Bridge Track (Discrete↔Continuous, Classical↔Quantum, Analogy Layers)
+### F. Bridge Track (Discrete<-->Continuous, Classical<-->Quantum, Analogy Layers)
 
 ```text
 Bridge Track – Core Responsibilities
-├─ Discrete ↔ Continuous
-│  ├─ Sums ↔ integrals
-│  ├─ Finite differences ↔ derivatives
-│  └─ Polygons ↔ smooth curves
-├─ Classical ↔ Quantum
+├─ Discrete <--> Continuous
+│  ├─ Sums <--> integrals
+│  ├─ Finite differences <--> derivatives
+│  └─ Polygons <--> smooth curves
+├─ Classical <--> Quantum
 │  ├─ Classical laws as limits of quantum expectations
 │  ├─ Ehrenfest‑type results linking averages to classical motion
-│  └─ Energy levels: discrete spectrum ↔ continuum approximations
-├─ Algebraic ↔ Geometric
-│  ├─ Formula ↔ graph ↔ area/volume picture
-│  └─ Vector as ordered pair ↔ arrow in the plane
+│  └─ Energy levels: discrete spectrum <--> continuum approximations
+├─ Algebraic <--> Geometric
+│  ├─ Formula <--> graph <--> area/volume picture
+│  └─ Vector as ordered pair <--> arrow in the plane
 └─ Multi‑sensory analogies
    ├─ Gravity‑based analogies (slopes, falling objects)
    ├─ Mechanical analogies (springs, masses, gears)
@@ -718,7 +718,7 @@ processes).
 Authoring Standard – Top‑Level Structure
 ├─ A. Naming & symbol conventions
 ├─ B. Recommended grouping‑symbol patterns
-├─ C. Pseudo‑math templating (English ↔ symbols)
+├─ C. Pseudo‑math templating (English <--> symbols)
 ├─ D. Example minimal‑topic template
 └─ E. Review checklist (clarity, cost, data, bridges)
 ```
@@ -771,7 +771,7 @@ Grouping‑Symbol Patterns
    └─ |x| and ∥v∥ explained explicitly when introduced
 ```
 
-### C. Pseudo‑Math Templating (English ↔ Symbols)
+### C. Pseudo‑Math Templating (English <--> Symbols)
 
 ```text
 Pseudo‑Math Templating Workflow
@@ -836,7 +836,7 @@ Author Review Checklist
 │  ├─ Are special cases or generalizations noted?
 │  └─ Is there mention of hybrid, plug‑and‑play, or surrogate models?
 ├─ Bridges
-│  ├─ Is there at least one bridge (discrete↔continuous, classical↔quantum, etc.)?
+│  ├─ Is there at least one bridge (discrete<-->continuous, classical<-->quantum, etc.)?
 │  ├─ Are analogies multi‑sensory where useful?
 │  └─ Are invariance/covariance ideas at least hinted at when relevant?
 └─ Technical accuracy & references
