@@ -149,23 +149,27 @@ These defaults matter later when we discuss zeration, invisible powers, invisibl
 We next clarify how to read mathematical notation in a consistent, structured way:
 
 ```text
-0.2 Reading & Notation Micro‑Primer
 ├─ Common symbols & reading
-│  ├─ =   --> “converts to”/ “is the same as”
-│  ├─ >,< --> “greater than/ less than”
-│  ├─ +,−,×,÷ --> operations on quantities
-│  └─ -->, ⇒   --> “leads to”, “simplifies to”
+│  ├─ =        --> “converts to” / “is the same as”
+│  ├─ >,<      --> “greater than / less than”
+│  ├─ +, −, ×, ÷ --> operations on quantities
+│  └─ →, ⇒     --> “leads to”, “simplifies to”
 ├─ Grouping symbols
 │  ├─ Parentheses ( ) for tight grouping
-│  ├─ Brackets [ ] for outer grouping
-│  └─ Braces { } for sets & piecewise cases
+│  ├─ Brackets    [ ] for outer grouping
+│  ├─ Braces      { } for sets & piecewise cases
+│  └─ Underbraces \underbrace{…}_{…} for highlighting parts of expressions
+│     ├─ Label a sub-expression:
+│     │   └─ a + \underbrace{b + c}_{extra term}
+│     └─ Show repeated structure:
+│         └─ \underbrace{x + x + ··· + x}_{n terms} converts to n x
 ├─ Structured English <--> symbolic forms
-│  ├─ “sum of (x and y)” --> (x) + (y)
-│  ├─ “product of (x and y)” --> (x) × (y)
-│  └─ “ratio of (x to y)” --> (x) / (y)
+│  ├─ “sum of (x and y)”        --> (x) + (y)
+│  ├─ “product of (x and y)”    --> (x) × (y)
+│  └─ “ratio of (x to y)”       --> (x) / (y)
 ├─ Sign meaning & connotation
-│  ├─ Positive/ negative as direction or offset
-│  └─ Emotional vs mathematical “positive/negative” differentiated
+│  ├─ Positive / negative as direction or offset
+│  └─ Emotional vs mathematical “positive / negative” differentiated
 └─ Equation reading habits
    ├─ Prefer “converts to” for intermediate steps
    └─ Reserve “equals” for final, stable relationships
