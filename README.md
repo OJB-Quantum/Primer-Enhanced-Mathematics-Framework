@@ -8,7 +8,7 @@ Towards a mathematical framework for intepretation and expression that assumes a
 
 ## A Sort of Zero-Assumption Graduated Mathematics Framework (ZGMF) by Onri Jay Benally (Version 1.0)
 
-**Overview:** This framework is a comprehensive standard for building math education content from the ground up with *zero assumptions* beyond basic human language (English) comprehension and very elementary notions of quantity. It introduces mathematical concepts in a **chronologically layered** way (from intuitive stories up to rigorous general forms), augmented by **structural tracks** (covering notation, semantics, assumptions, data, multi-model links, and conceptual bridges). The goal is to guide learners from a 6th-grade level understanding through high school, college, and up to graduate/research level, all within a consistent, gradually evolving presentation.
+**Overview:** This framework is a comprehensive standard for building mathematical context from the ground up with *zero assumptions* beyond basic human language (English) comprehension and very elementary notions of quantity. It introduces mathematical concepts in a **chronologically layered** way (from intuitive stories up to rigorous general forms), augmented by **structural tracks** (covering notation, semantics, assumptions, data, multi-model links, and conceptual bridges). The goal is to guide learners from a 6th-grade level understanding through high school, college, and up to graduate/research level, all within a consistent, gradually evolving presentation.
 
 The framework emphasizes clarity, real-world context, and a seamless blending of English descriptions with mathematical symbolism. Key features include upfront primers (arithmetic/logic and notation/language), integrated vocabulary glossaries, use of analogies across various sensory modalities (visual, tactile, auditory) and everyday experiences, and the inclusion of modern concepts like cost functions and error budgets early in the learning process. Content developed under this framework should be **interactive and multi-modal** when possible, leveraging open-source tools (for example, Google Colab notebooks, GeoGebra, etc.) to allow learners to experiment with visualizations and computations. The framework also provides an authoring standard (akin to a style guide) to ensure consistency and a path for continuous evolution of the curriculum.
 
@@ -24,8 +24,8 @@ A Sort of Zero-Assumption Graduated Mathematics Framework (ZGMF) by Onri Jay Ben
 │   ├─ 1. Phenomenon story
 │   ├─ 2. Qualitative patterns
 │   ├─ 3. Structured English expressions
-│   ├─ 4. Pseudo-math (bracketed terms)
-│   ├─ 5. Canonical math form
+│   ├─ 4. Pseudo-mathematics (bracketed terms)
+│   ├─ 5. Canonical mathematical form
 │   ├─ 6. Generalized abstract form
 │   ├─ 7. Cost function & data link
 │   ├─ 8. Compute-ready implementation
@@ -42,7 +42,7 @@ A Sort of Zero-Assumption Graduated Mathematics Framework (ZGMF) by Onri Jay Ben
 ├─ III. Authoring Standard (like PEPs)
 │   ├─ A. Naming & symbol conventions
 │   ├─ B. Recommended grouping-symbol patterns
-│   ├─ C. Pseudo-math templating (English <--> symbols)
+│   ├─ C. Pseudo-mathematics templating (English <--> symbols)
 │   ├─ D. Example minimal-topic template
 │   └─ E. Review checklist (clarity, cost, data, bridges)
 │
@@ -139,13 +139,13 @@ Explain that all of these expressions represent the same quantity, and the diffe
 0.2 Reading & Notation Primer
 ├─ Glossary of common symbols
 ├─ Notation in context
-├─ English-to-math translation
+├─ English-to-mathematics translation
 ├─ Natural language for fractions and ratios
 ├─ Positive/negative connotations
 └─ Example - translating a statement
 ```
 
-This primer focuses on how to *read* and *write* basic mathematical notation and the interplay between English phrasing and symbols. It aims to eliminate the “language barrier” of math symbols by showing that they are shorthand for ideas that can be stated in plain language.
+This primer focuses on how to *read* and *write* basic mathematical notation and the interplay between English phrasing and symbols. It aims to eliminate the “language barrier” of mathematic symbols by showing that they are shorthand for ideas that can be stated in plain language.
 
 #### Glossary of common symbols
 
@@ -168,7 +168,7 @@ Each symbol appears in a simple example, such as `7 > 3` read as “seven is gre
 
 Notation is explained as a compact **language** with grammar (order of operations, grouping). Parentheses are introduced as grouping tools that can change meaning, for example `2 × (3 + 4)` versus `2 × 3 + 4`. Strategic grouping is highlighted as a way to make expressions match the intended story.
 
-#### English-to-math translation
+#### English-to-mathematics translation
 
 Learners see how structured English sentences map to symbolic expressions.
 
@@ -176,7 +176,7 @@ Learners see how structured English sentences map to symbolic expressions.
 Example mapping
 ├─ English: "Add 3 to 5 to get 8."
 ├─ Structured English: "5 plus 3 converts to 8."
-└─ Pseudo-math: 5 + 3 → 8
+└─ Pseudo-mathematics: 5 + 3 → 8
 ```
 
 The word "converts to" is intentionally used to emphasize process. Later, this will be connected to the equals sign ("is equal to") while preserving the sense of transformation.
@@ -190,8 +190,8 @@ Fractions are first described via everyday language ("3 out of 4" slices). The t
 The primer distinguishes everyday emotional meanings of "positive" and "negative" from their neutral mathematical meanings.
 
 ```text
-Positive vs negative (math vs everyday)
-├─ Math: sign indicates direction (above/below zero, forward/backward)
+Positive vs negative (mathematics vs everyday)
+├─ Mathematics: sign indicates direction (above/below zero, forward/backward)
 └─ Everyday: often "good/bad" or "optimistic/pessimistic"
 ```
 
@@ -205,7 +205,7 @@ A word problem such as "Alice has 3 apples and Bob has 5 apples. How many apples
 Structural translation
 ├─ English: "Alice has 3, Bob has 5, find the total."
 ├─ Structured English: "total apples = (Alice’s apples) + (Bob’s apples)."
-└─ Canonical math: 3 + 5 = 8
+└─ Canonical mathematics: 3 + 5 = 8
 ```
 
 The phrase "converts to" can be used in intermediate steps:
@@ -225,8 +225,8 @@ Chronological Layers (per topic)
 ├─ 1. Phenomenon story
 ├─ 2. Qualitative patterns
 ├─ 3. Structured English expressions
-├─ 4. Pseudo-math (bracketed terms)
-├─ 5. Canonical math form
+├─ 4. Pseudo-mathematics (bracketed terms)
+├─ 5. Canonical mathematical form
 ├─ 6. Generalized abstract form
 ├─ 7. Cost function & data link
 ├─ 8. Compute-ready implementation
@@ -308,18 +308,18 @@ This sentence essentially encodes the update rule: `new speed = old speed + (acc
 
 "To fully describe the wind, we must say both how fast and which way it blows at each location. For example: at the hilltop, wind converts to (20 km/h, east). This pair of number and direction is a vector. So the wind field can be described by a vector at each point: Vector(point) converts to (speed, direction)."
 
-### 4. Pseudo-Math (Bracketed Terms)
+### 4. Pseudo-Mathematics (Bracketed Terms)
 
-The **pseudo-math** layer rewrites structured English into almost-mathematical form, preserving explanatory brackets.
+The **pseudo-mathematics** layer rewrites structured English into almost-mathematical form, preserving explanatory brackets.
 
 ```text
-Pseudo-math - process
+Pseudo-mathematics - process
 ├─ Replace named quantities with symbols
 ├─ Keep descriptive brackets where needed
 └─ Use arrows (→) for "converts to" steps
 ```
 
-#### Example - acceleration pseudo-math
+#### Example - acceleration pseudo-mathematics
 
 Let `v_new` be the new speed, `v_old` the old speed, `a` the acceleration, and Δt the time step.
 
@@ -327,22 +327,22 @@ Let `v_new` be the new speed, `v_old` the old speed, `a` the acceleration, and �
 
 For Alice’s hill example, one might set Δt = 1 s, a ≈ 5 km/h per s, and show discrete updates: `v(1) = v(0) + 5`, `v(2) = v(1) + 5`, and so on.
 
-#### Example - vector field pseudo-math
+#### Example - vector field pseudo-mathematics
 
-For wind on a map with coordinates `(x, y)`, one pseudo-math representation is:
+For wind on a map with coordinates `(x, y)`, one pseudo-mathematics representation is:
 
 `W(x, y) = (v_x(x, y), v_y(x, y))  [eastward, northward components]`
 
 Here brackets remind the reader what each component means. The arrow-like notation is still described in English.
 
-### 5. Canonical Math Form
+### 5. Canonical Mathematical Form
 
-Now we present the **canonical math form**: the clean, standard equation or definition.
+Now we present the **canonical mathematical form**: the clean, standard equation or definition.
 
 ```text
 Canonical form - characteristics
 ├─ Uses standard notation with minimal English
-├─ Reflects the structure built in pseudo-math
+├─ Reflects the structure built in pseudo-mathematics
 └─ Matches textbook presentation for the concept
 ```
 
@@ -594,13 +594,13 @@ Examples include viewing discrete update rules like `v_{n+1} = v_n + a Δt` as a
 
 ## III. Authoring Standard (like PEPs)
 
-The Authoring Standard defines how to *write* content in this framework: naming, grouping, pseudo-math, templates, and review.
+The Authoring Standard defines how to *write* content in this framework: naming, grouping, pseudo-mathematics, templates, and review.
 
 ```text
 Authoring Standard
 ├─ A. Naming & symbol conventions
 ├─ B. Recommended grouping-symbol patterns
-├─ C. Pseudo-math templating (English <--> symbols)
+├─ C. Pseudo-mathematics templating (English <--> symbols)
 ├─ D. Example minimal-topic template
 └─ E. Review checklist
 ```
@@ -640,10 +640,10 @@ These illustrate how the underbrace can annotate a sub‑expression while keepin
 
 Expressions such as $(x + 5) + (y - 2)$ map neatly from English "sum of (x plus 5) and (y minus 2)".
 
-### C. Pseudo-Math Templating (English <--> Symbols)
+### C. Pseudo-Mathematics Templating (English <--> Symbols)
 
 ```text
-Pseudo-math templating - steps
+Pseudo-mathematics templating - steps
 ├─ Start with a clear English sentence
 ├─ Identify phrases that map to operations (sum, product, ratio)
 ├─ Replace phrases by bracketed placeholders
@@ -657,7 +657,7 @@ Structured English:
 
 "Total distance converts to (initial speed) × (time) plus one half times (acceleration) times (time squared)."
 
-Pseudo-math:
+Pseudo-mathematics:
 
 `distance = (initial_speed) × (time) + (1/2) × (acceleration) × (time)^2`
 
@@ -681,7 +681,7 @@ Minimal topic template (outline)
 ├─ Phenomenon story
 ├─ Qualitative patterns
 ├─ Structured English
-├─ Pseudo-math
+├─ Pseudo-mathematics
 ├─ Canonical form
 ├─ General form
 ├─ Cost & data notes
@@ -746,7 +746,7 @@ Content is written in Markdown for GitHub compatibility.
 Human-readable markup - practices
 ├─ Use headings (#, ##, ###) for structure
 ├─ Use fenced code blocks for ASCII trees and code
-├─ Use inline math $...$ and display math $$...$$
+├─ Use inline mathematics $...$ and display mathematics $$...$$
 └─ Use descriptive link text with embedded URLs
 ```
 
@@ -853,9 +853,9 @@ Educational scaffolding - sketch
 │   ├─ Multivariable calculus
 │   ├─ Linear algebra
 │   ├─ Differential equations
-│   ├─ Discrete math
+│   ├─ Discrete mathematics
 │   └─ Intro statistics
-└─ Graduate / Research
+└─ Graduate/ Research
     ├─ Real & complex analysis, abstract algebra
     ├─ Numerical methods & optimization
     └─ Specialized areas (e.g., quantum computing, advanced modeling)
