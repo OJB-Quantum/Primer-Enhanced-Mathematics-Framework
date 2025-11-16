@@ -6,11 +6,53 @@ Towards a mathematical framework for intepretation and expression that assumes a
 Overview: This framework is a comprehensive standard for building math education content from the ground up with zero assumptions beyond basic human language (English) comprehension and very elementary notions of quantity. It introduces mathematical concepts in a chronologically layered way (from intuitive stories up to rigorous general forms), augmented by structural tracks (covering notation, semantics, assumptions, data, multi-model links, and conceptual bridges). The goal is to guide learners from a 6th-grade level understanding through high school, college, and up to graduate/research level, all within a consistent, gradually evolving presentation. The framework emphasizes clarity, real-world context, and a seamless blending of English descriptions with mathematical symbolism. Key features include upfront primers (arithmetic/logic and notation/language), integrated vocabulary glossaries, use of analogies across various sensory modalities (visual, tactile, auditory) and everyday experiences, and the inclusion of modern concepts like cost functions and error budgets early in the learning process. Content developed under this framework should be interactive and multi-modal when possible, leveraging open-source tools (for example, Jupyter notebooks, GeoGebra, etc.) to allow learners to experiment with visualizations and computations. The framework also provides an authoring standard (akin to a style guide) to ensure consistency and a path for continuous evolution of the curriculum.
 
 
-## A Sort of Zero‑Assumption Graduated Mathematics Framework (ZGMF) v1.0
-
-**Author:** Onri Jay Benally
+## A Sort of Zero‑Assumption Graduated Mathematics Framework (ZGMF) by Onri Jay Benally 
 
 **Scope:** From 6th‑grade arithmetic intuition to graduate‑level, research‑adjacent mathematics.
+
+```
+├─ 0. Entry Prerequisite
+│   ├─ 0.1 Arithmetic primer (optional pre-pack)
+│   └─ 0.2 Reading & notation primer
+│
+├─ I. Chronological Layers (per topic)
+│   ├─ 1. Phenomenon story
+│   ├─ 2. Qualitative patterns
+│   ├─ 3. Structured English expressions
+│   ├─ 4. Pseudo-math (bracketed terms)
+│   ├─ 5. Canonical math form
+│   ├─ 6. Generalized abstract form
+│   ├─ 7. Cost function & data link
+│   ├─ 8. Compute-ready implementation
+│   └─ 9. Historical & conceptual notes
+│
+├─ II. Structural Tracks
+│   ├─ A. Notation track (symbols, units, roles)
+│   ├─ B. Semantics track (causal meaning & constraints)
+│   ├─ C. Assumption track (local & global assumptions)
+│   ├─ D. Data & cost track (error metrics, datasets)
+│   ├─ E. Multi-model track (families of models)
+│   └─ F. Bridge track (discrete ↔ continuous, classical ↔ quantum)
+│
+├─ III. Authoring Standard (like PEPs)
+│   ├─ A. Naming & symbol conventions
+│   ├─ B. Recommended grouping-symbol patterns
+│   ├─ C. Pseudo-math templating (English ↔ symbols)
+│   ├─ D. Example minimal-topic template
+│   └─ E. Review checklist (clarity, cost, data, bridges)
+│
+├─ IV. Implementation & Tooling
+│   ├─ A. Human-readable markup (ASCII trees, Markdown)
+│   ├─ B. Machine-readable schema (JSON/YAML layer metadata)
+│   ├─ C. Validation tools (symbol consistency, unit checks)
+│   └─ D. Code-generation hooks (CPU/GPU, Python, etc.)
+│
+└─ V. Ecosystem & Evolution
+    ├─ A. Versioning and compatibility
+    ├─ B. Topic repositories (algebra, geometry, calculus, etc.)
+    ├─ C. Educational scaffolding (6th-grade to graduate)
+    └─ D. Research notes (links to theses, open-access articles)
+```
 
 ---
 
@@ -19,7 +61,6 @@ Overview: This framework is a comprehensive standard for building math education
 The Zero‑Assumption Graduated Mathematics Framework (ZGMF) is designed to:
 
 ```text
-Zero‑Assumption Graduated Mathematics Framework (ZGMF) by Onri Jay Benally 
 ├─ Start from near‑zero assumptions
 │  ├─ Only basic human language (English) understanding
 │  └─ Very simple quantity ideas (more/less, same/different)
@@ -40,7 +81,6 @@ Zero‑Assumption Graduated Mathematics Framework (ZGMF) by Onri Jay Benally
    ├─ Machine‑readable metadata
    └─ Links to open‑source tools & research
 ```
-
 
 
 A **vector field** and the notions of cost function and error budget are introduced very early as guiding examples.
