@@ -896,6 +896,3 @@ For example, a topic on vector fields might link to open-access vector calculus 
 18. A physics and data co-driven surrogate modeling method for high-dimensional rare event simulation – <https://arxiv.org/abs/2310.00261>
 19. Classical-Quantum correspondence in Lindblad evolution – <https://arxiv.org/abs/2403.09345>
 20. Considerations about the incompleteness of the Ehrenfest’s theorem in quantum mechanics – <https://arxiv.org/abs/2011.04038>
-
-
-Full script goes to line 890
