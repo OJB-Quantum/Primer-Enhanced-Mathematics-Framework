@@ -1,4 +1,7 @@
 # Primer-Enhanced-Mathematics-Framework
+
+[![License](https://img.shields.io/badge/Creative_Commons-License-green)](https://choosealicense.com/licenses/cc-by-4.0)
+
 Towards a mathematical framework for intepretation and expression that assumes a super basic idea about numbers and quantities. Created by Onri Jay Benally, an Indigenous American Quantum Hardware Engineer. 
 
 ---
