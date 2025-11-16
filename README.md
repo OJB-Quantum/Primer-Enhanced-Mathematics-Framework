@@ -151,8 +151,8 @@ We next clarify how to read mathematical notation in a consistent, structured wa
 ```text
 0.2 Reading & Notation Micro‑Primer
 ├─ Common symbols & reading
-│  ├─ =   --> “converts to” / “is the same as”
-│  ├─ >,< --> “greater than / less than”
+│  ├─ =   --> “converts to”/ “is the same as”
+│  ├─ >,< --> “greater than/ less than”
 │  ├─ +,−,×,÷ --> operations on quantities
 │  └─ -->, ⇒   --> “leads to”, “simplifies to”
 ├─ Grouping symbols
@@ -164,7 +164,7 @@ We next clarify how to read mathematical notation in a consistent, structured wa
 │  ├─ “product of (x and y)” --> (x) × (y)
 │  └─ “ratio of (x to y)” --> (x) / (y)
 ├─ Sign meaning & connotation
-│  ├─ Positive / negative as direction or offset
+│  ├─ Positive/ negative as direction or offset
 │  └─ Emotional vs mathematical “positive/negative” differentiated
 └─ Equation reading habits
    ├─ Prefer “converts to” for intermediate steps
