@@ -10,7 +10,7 @@ Towards a mathematical framework for intepretation and expression that assumes a
 
 **Overview:** This framework is a comprehensive standard for building math education content from the ground up with *zero assumptions* beyond basic human language (English) comprehension and very elementary notions of quantity. It introduces mathematical concepts in a **chronologically layered** way (from intuitive stories up to rigorous general forms), augmented by **structural tracks** (covering notation, semantics, assumptions, data, multi-model links, and conceptual bridges). The goal is to guide learners from a 6th-grade level understanding through high school, college, and up to graduate/research level, all within a consistent, gradually evolving presentation.
 
-The framework emphasizes clarity, real-world context, and a seamless blending of English descriptions with mathematical symbolism. Key features include upfront primers (arithmetic/logic and notation/language), integrated vocabulary glossaries, use of analogies across various sensory modalities (visual, tactile, auditory) and everyday experiences, and the inclusion of modern concepts like cost functions and error budgets early in the learning process. Content developed under this framework should be **interactive and multi-modal** when possible, leveraging open-source tools (for example, Jupyter notebooks, GeoGebra, etc.) to allow learners to experiment with visualizations and computations. The framework also provides an authoring standard (akin to a style guide) to ensure consistency and a path for continuous evolution of the curriculum.
+The framework emphasizes clarity, real-world context, and a seamless blending of English descriptions with mathematical symbolism. Key features include upfront primers (arithmetic/logic and notation/language), integrated vocabulary glossaries, use of analogies across various sensory modalities (visual, tactile, auditory) and everyday experiences, and the inclusion of modern concepts like cost functions and error budgets early in the learning process. Content developed under this framework should be **interactive and multi-modal** when possible, leveraging open-source tools (for example, Google Colab notebooks, GeoGebra, etc.) to allow learners to experiment with visualizations and computations. The framework also provides an authoring standard (akin to a style guide) to ensure consistency and a path for continuous evolution of the curriculum.
 
 Below is the high-level *tree* of the ZGMF structure, followed by detailed sections elaborating each part with examples and guidelines:
 
@@ -73,7 +73,7 @@ Before diving into the main layers, the framework provides two *primers* to ensu
 ├─ Identity and default values
 ├─ Hyper-operations ladder
 ├─ Boolean & logic primer
-└─ Example – identity in action
+└─ Example - identity in action
 ```
 
 This primer reinforces or introduces basic arithmetic, Boolean logic, and other micro-primers that a learner might need. It assumes only a very general familiarity with counting and comparison (for example, bigger vs smaller). It sets the stage for understanding invisible operations, defaults, and the idea of a structured ladder of operations.
@@ -125,7 +125,7 @@ At each level, using the identity argument leaves the number unchanged. This bac
 
 Basic logical operations AND, OR, and NOT are introduced with simple everyday statements. Truth tables are shown for small numbers of cases, connecting logical structure to simple reasoning. Learners see that mathematical statements can be treated as things that are true or false, and that combinations of statements obey consistent rules.
 
-#### Example – identity in action
+#### Example - identity in action
 
 A short worked example ties the ideas together. For instance, show that:
 
@@ -142,7 +142,7 @@ Explain that all of these expressions represent the same quantity, and the diffe
 ├─ English-to-math translation
 ├─ Natural language for fractions and ratios
 ├─ Positive/negative connotations
-└─ Example – translating a statement
+└─ Example - translating a statement
 ```
 
 This primer focuses on how to *read* and *write* basic mathematical notation and the interplay between English phrasing and symbols. It aims to eliminate the “language barrier” of math symbols by showing that they are shorthand for ideas that can be stated in plain language.
@@ -197,7 +197,7 @@ Positive vs negative (math vs everyday)
 
 A simple story illustrates that a negative error (for example, `−10`) might simply mean “10 below the target,” not “a bad number.”
 
-#### Example – translating a statement
+#### Example - translating a statement
 
 A word problem such as "Alice has 3 apples and Bob has 5 apples. How many apples do they have together?" is fully translated.
 
@@ -240,7 +240,7 @@ Below each layer is described, with example fragments around acceleration and ve
 The *phenomenon story* is a narrative or real-world scenario that embodies the concept. It does not mention equations or formal terminology; instead, it tells a story or describes an observable phenomenon that the mathematical concept will explain or quantify.
 
 ```text
-Phenomenon story – analogy palette
+Phenomenon story - analogy palette
 ├─ Gravity-based analogies
 ├─ Mechanical/ car-related analogies
 ├─ Sports-based analogies
@@ -249,13 +249,13 @@ Phenomenon story – analogy palette
 └─ Signal/ data analogies (time series, waveforms)
 ```
 
-#### Example – early vector-field story
+#### Example - early vector-field story
 
 "Imagine you’re outside on a windy day. You hold some lightweight seeds in your hand and blow them into the air. Depending on where each seed is, the wind pushes it in a particular direction. Near buildings the wind is weak and swirls around, while in the open field it blows strongly toward the east. It is as if, at every spot in the air, there is an arrow telling the wind which way to go and how strongly."
 
 This narrative sets up the idea of a **vector field**: an arrow attached to every point in space.
 
-#### Example – acceleration story
+#### Example - acceleration story
 
 "Alice is cycling down a hill. At the top she is moving slowly, but as she rolls downhill, she feels herself going faster and faster without pedaling. By the time she reaches the bottom, she is going very fast."
 
@@ -266,12 +266,12 @@ This story embeds the phenomenon of acceleration due to gravity, with no symbols
 This layer emphasizes **qualitative patterns**: general behaviors or regularities observed in the phenomenon.
 
 ```text
-Qualitative patterns – typical ingredients
+Qualitative patterns - typical ingredients
 ├─ Tables of informal observations
 ├─ Scatterplots or simple graphs
 ├─ Descriptions of trends (increasing, decreasing, cyclic)
 ├─ Grayscale or color gradients for intensity
-└─ Cause–effect statements in plain language
+└─ Cause-effect statements in plain language
 ```
 
 For Alice’s descent, a simple table might record her speed at equal time steps, showing it increasing over time. A sketch graph would have time on the horizontal axis and speed on the vertical, sloping upward.
@@ -292,19 +292,19 @@ This is a **visual vector field**. A magnetic field around a bar magnet can be s
 Here we move from pure description to **structured English** that mimics equation structure.
 
 ```text
-Structured English – typical pattern
+Structured English - typical pattern
 ├─ Name the quantities (e.g., "Alice’s speed", "time rolling")
 ├─ Describe relationships: "new = old + change"
 └─ Introduce technical terms gently (e.g., "acceleration")
 ```
 
-#### Example – acceleration in English
+#### Example - acceleration in English
 
 "Each second, Alice’s speed increases by the same amount. New speed after one more second converts to current speed plus 5 km/h. The number `5 km/h per second` is the acceleration."
 
 This sentence essentially encodes the update rule: `new speed = old speed + (acceleration × time step)`.
 
-#### Example – vector field in English
+#### Example - vector field in English
 
 "To fully describe the wind, we must say both how fast and which way it blows at each location. For example: at the hilltop, wind converts to (20 km/h, east). This pair of number and direction is a vector. So the wind field can be described by a vector at each point: Vector(point) converts to (speed, direction)."
 
@@ -313,13 +313,13 @@ This sentence essentially encodes the update rule: `new speed = old speed + (acc
 The **pseudo-math** layer rewrites structured English into almost-mathematical form, preserving explanatory brackets.
 
 ```text
-Pseudo-math – process
+Pseudo-math - process
 ├─ Replace named quantities with symbols
 ├─ Keep descriptive brackets where needed
 └─ Use arrows (→) for "converts to" steps
 ```
 
-#### Example – acceleration pseudo-math
+#### Example - acceleration pseudo-math
 
 Let `v_new` be the new speed, `v_old` the old speed, `a` the acceleration, and Δt the time step.
 
@@ -327,7 +327,7 @@ Let `v_new` be the new speed, `v_old` the old speed, `a` the acceleration, and �
 
 For Alice’s hill example, one might set Δt = 1 s, a ≈ 5 km/h per s, and show discrete updates: `v(1) = v(0) + 5`, `v(2) = v(1) + 5`, and so on.
 
-#### Example – vector field pseudo-math
+#### Example - vector field pseudo-math
 
 For wind on a map with coordinates `(x, y)`, one pseudo-math representation is:
 
@@ -340,13 +340,13 @@ Here brackets remind the reader what each component means. The arrow-like notati
 Now we present the **canonical math form**: the clean, standard equation or definition.
 
 ```text
-Canonical form – characteristics
+Canonical form - characteristics
 ├─ Uses standard notation with minimal English
 ├─ Reflects the structure built in pseudo-math
 └─ Matches textbook presentation for the concept
 ```
 
-#### Example – constant acceleration
+#### Example - constant acceleration
 
 In canonical algebraic form:
 
@@ -356,7 +356,7 @@ $$
 
 with $v_0$ the initial velocity and $a$ the constant acceleration. For Alice starting from rest with $a = 5,\text{km/h per s}$, this reduces to $v = 5 t$ (with $t$ in seconds and $v$ in km/h).
 
-#### Example – vector field
+#### Example - vector field
 
 A planar vector field can be written canonically as:
 
@@ -371,13 +371,13 @@ where $W_x$ and $W_y$ give the horizontal and vertical components of the vector 
 The **generalized abstract form** replaces specific values with variables, providing fully general definitions and relationships.
 
 ```text
-Generalized form – aims
+Generalized form - aims
 ├─ Abstract away specific numbers
 ├─ Use standard function notation
 └─ Mention domain and conditions of validity
 ```
 
-#### Example – acceleration general form
+#### Example - acceleration general form
 
 For constant acceleration $a$:
 
@@ -399,7 +399,7 @@ $$
 
 under the assumption that $v$ is differentiable in time.
 
-#### Example – vector field general form
+#### Example - vector field general form
 
 A vector field on the plane is:
 
@@ -414,7 +414,7 @@ where $P$ and $Q$ are scalar functions. Our wind field $\mathbf{W}$ is one insta
 Now we connect models to reality via **cost functions** and data. This layer answers, very explicitly: *"How good is my current answer or model?"*
 
 ```text
-Cost & data link – core ideas
+Cost & data link - core ideas
 ├─ Define a measure of discrepancy (cost)
 ├─ Connect formula predictions to measured data
 ├─ Introduce the notion of an error budget
@@ -423,7 +423,7 @@ Cost & data link – core ideas
 
 A **cost function** is any rule that outputs a number indicating how far off a prediction is from what we want. High cost means "far away"; low cost means "close".
 
-#### Example – simple cost
+#### Example - simple cost
 
 Suppose our model predicts $v_{\text{model}}(t)$ and measurements give $v_{\text{data}}(t)$. For a single time point $t$:
 
@@ -438,7 +438,7 @@ A more global cost over many points might average or sum these errors.
 An **error budget** expresses how much error or failure we are willing to tolerate before we consider the model unacceptable.
 
 ```text
-Error budget – simple description
+Error budget - simple description
 ├─ "How much failure will I tolerate?"
 ├─ A numeric threshold (e.g., max 0.5 m error)
 └─ A constraint to be satisfied (stay below budget)
@@ -451,13 +451,13 @@ For example, in a classroom experiment, we might decide that being off by at mos
 In this layer, the concept is made **compute-ready**: we show how to use a calculator or program to actually compute predictions or simulate behavior.
 
 ```text
-Compute-ready – milestones
+Compute-ready - milestones
 ├─ Express formula with explicit inputs and outputs
 ├─ Provide numerical examples (hand or calculator)
 └─ Optionally give pseudocode or code snippets
 ```
 
-#### Example – velocity computation
+#### Example - velocity computation
 
 Given $v = v_0 + a t$, with $v_0 = 0$ and $a = 5,\text{km/h per s}$, we compute:
 
@@ -480,7 +480,7 @@ For vector fields, a compute-ready form might be a grid of sample points with th
 The final layer provides **historical context** and conceptual remarks.
 
 ```text
-Historical & conceptual notes – ingredients
+Historical & conceptual notes - ingredients
 ├─ Short history (who, when, why)
 ├─ Conceptual connections to other ideas
 └─ Pointers to advanced or modern applications
@@ -511,7 +511,7 @@ Structural Tracks
 The Notation Track ensures that symbols, units, and their roles are introduced and used consistently.
 
 ```text
-Notation track – responsibilities
+Notation track - responsibilities
 ├─ Define each symbol clearly on first use
 ├─ Attach units to quantities where applicable
 ├─ Use conventional letters when possible
@@ -525,8 +525,8 @@ Examples include using $t$ for time, $x$ for position, $v$ for velocity, and $a$
 The Semantics Track ensures that every equation is tied back to meaning.
 
 ```text
-Semantics track – focus points
-├─ Describe "what depends on what" (cause–effect)
+Semantics track - focus points
+├─ Describe "what depends on what" (cause-effect)
 ├─ Explain the meaning of each parameter
 ├─ State valid ranges (domains) for variables
 └─ Outline practical interpretations of signs and units
@@ -539,7 +539,7 @@ For example, in $v(t) = v_0 + a t$, one explicitly states that velocity depends 
 This track makes **assumptions** explicit.
 
 ```text
-Assumption track – checklist
+Assumption track - checklist
 ├─ List model simplifications (e.g., "no friction")
 ├─ State mathematical conditions (e.g., differentiability)
 ├─ Clarify domain assumptions (e.g., t ≥ 0, n integer)
@@ -553,7 +553,7 @@ For constant-acceleration motion, assumptions include one-dimensional motion, co
 This track integrates **empirical thinking**.
 
 ```text
-Data & cost track – patterns
+Data & cost track - patterns
 ├─ Provide or suggest small datasets for illustration
 ├─ Visualize data vs model (plots, overlays)
 ├─ Introduce simple error metrics (e.g., absolute error)
@@ -567,7 +567,7 @@ For example, measuring Alice’s speed at several times gives a table of data, w
 The Multi-Model Track places each model in a **family of related models**.
 
 ```text
-Multi-model track – ingredients
+Multi-model track - ingredients
 ├─ Show where current model sits in a hierarchy
 ├─ Mention special cases and generalizations
 ├─ Encourage plug-and-play composition of models
@@ -581,7 +581,7 @@ Constant acceleration is a special case in a broader family of motion models (e.
 The Bridge Track highlights **connections across domains and scales**.
 
 ```text
-Bridge track – themes
+Bridge track - themes
 ├─ Discrete vs continuous formulations
 ├─ Classical vs quantum correspondence
 ├─ Algebraic vs geometric viewpoints
@@ -608,7 +608,7 @@ Authoring Standard
 ### A. Naming & Symbol Conventions
 
 ```text
-Naming conventions – sample rules
+Naming conventions - sample rules
 ├─ Prefer conventional letters (t for time, x for position)
 ├─ Use descriptive subscripts when clarity is needed
 ├─ Distinguish scalars, vectors, matrices (fonts or arrows)
@@ -621,7 +621,7 @@ Also, use "→" or "⇒" for "converts to" or "simplifies to" in derivations, re
 ### B. Recommended Grouping-Symbol Patterns
 
 ```text
-Grouping patterns – guidance
+Grouping patterns - guidance
 ├─ Use parentheses liberally to clarify structure
 ├─ Use () inside [] inside {} for nested groupings
 ├─ Group each English chunk when translating (e.g., (sum of x and y))
@@ -643,7 +643,7 @@ Expressions such as $(x + 5) + (y - 2)$ map neatly from English "sum of (x plus 
 ### C. Pseudo-Math Templating (English <--> Symbols)
 
 ```text
-Pseudo-math templating – steps
+Pseudo-math templating - steps
 ├─ Start with a clear English sentence
 ├─ Identify phrases that map to operations (sum, product, ratio)
 ├─ Replace phrases by bracketed placeholders
@@ -651,7 +651,7 @@ Pseudo-math templating – steps
 └─ Remove unnecessary 1s and × signs in the final canonical form
 ```
 
-#### Example – distance under constant acceleration
+#### Example - distance under constant acceleration
 
 Structured English:
 
@@ -743,7 +743,7 @@ Implementation & tooling
 Content is written in Markdown for GitHub compatibility.
 
 ```text
-Human-readable markup – practices
+Human-readable markup - practices
 ├─ Use headings (#, ##, ###) for structure
 ├─ Use fenced code blocks for ASCII trees and code
 ├─ Use inline math $...$ and display math $$...$$
@@ -757,7 +757,7 @@ ASCII trees (as used throughout this document) provide visual structure that rem
 Topics can be accompanied by a YAML or JSON metadata file capturing layers, tracks, and symbols.
 
 ```text
-Machine-readable schema – sample fields
+Machine-readable schema - sample fields
 ├─ title, prerequisites, difficulty
 ├─ layer texts (story, qualitative, etc.)
 ├─ symbol table (names, meanings, units)
@@ -772,7 +772,7 @@ This supports automated checks, topic search, curriculum planning, and code gene
 Validation scripts or tools can parse the markdown and metadata.
 
 ```text
-Validation tools – roles
+Validation tools - roles
 ├─ Check that all symbols appearing in formulas are defined
 ├─ Check that units are dimensionally consistent in key equations
 ├─ Verify that references and links are not broken
@@ -786,10 +786,10 @@ These tools can run in continuous integration (for example, GitHub Actions) to k
 Where formulas are explicit, simple code can be generated automatically.
 
 ```text
-Code-generation hooks – examples
+Code-generation hooks - examples
 ├─ Create Python functions from algebraic formulas
 ├─ Generate small simulation scripts (e.g., Euler method)
-├─ Build Jupyter notebooks mixing text and code
+├─ Build Google Colab notebooks mixing text and code
 └─ Interface with tools like GeoGebra or SageMath for visualization
 ```
 
@@ -810,7 +810,7 @@ Ecosystem & evolution
 ### A. Versioning and Compatibility
 
 ```text
-Versioning – core ideas
+Versioning - core ideas
 ├─ Assign semantic versions to the framework (e.g., 1.0, 1.1, 2.0)
 ├─ Track version per topic file
 ├─ Maintain changelogs for transparency
@@ -822,7 +822,7 @@ This allows educators to rely on stable versions while development continues.
 ### B. Topic Repositories (Algebra, Geometry, Calculus, etc.)
 
 ```text
-Topic repositories – organization
+Topic repositories - organization
 ├─ Arithmetic & Number Theory
 ├─ Algebra
 ├─ Geometry
@@ -837,13 +837,13 @@ Each repository (or subdirectory) hosts topics written with the ZGMF standard, m
 ### C. Educational Scaffolding (6th-Grade to Graduate)
 
 ```text
-Educational scaffolding – sketch
-├─ Middle School (6–8)
+Educational scaffolding - sketch
+├─ Middle School (6-8)
 │   ├─ Arithmetic foundations
 │   ├─ Basic geometry
 │   ├─ Introductory algebra
 │   └─ Intro probability & data
-├─ High School (9–12)
+├─ High School (9-12)
 │   ├─ Algebra I & II
 │   ├─ Geometry (proofs)
 │   ├─ Trigonometry
@@ -866,7 +866,7 @@ Each topic is tagged with suggested level and prerequisites, forming a directed 
 ### D. Research Notes (Links to Theses, Open-Access Articles)
 
 ```text
-Research notes – purposes
+Research notes - purposes
 ├─ Connect core ideas to foundational papers
 ├─ Link to open-access textbooks and lecture notes
 ├─ Highlight modern applications and active research
@@ -879,23 +879,23 @@ For example, a topic on vector fields might link to open-access vector calculus 
 
 ## References
 
-1. Hyperoperation – <https://en.wikipedia.org/wiki/Hyperoperation>
-2. Ehrenfest theorem – <https://en.wikipedia.org/wiki/Ehrenfest_theorem>
-3. Successor function/ zeration (overview) – <https://googology.fandom.com/wiki/Successor_function>
-4. Intuitive description of cost functions in ML – <https://datascience.stackexchange.com/questions/12413/what-does-it-mean-when-people-say-a-cost-function-is-something-you-want-to-minim>
-5. Introductory explanation of cost functions – <https://www.alooba.com/skills/concepts/machine-learning-11/cost-function/>
-6. Error budgets in reliability engineering (overview) – <https://www.atlassian.com/incident-management/kpis/error-budget>
-7. Error budgets and SLOs – <https://www.nobl9.com/service-level-objectives/error-budget>
-8. Simple introduction to vector fields – <https://intmath.com/blog/mathematics/vector-fields-a-simple-and-painless-introduction-3345>
-9. Example magnetic field visualization image (iron filings) – <https://upload.wikimedia.org/wikipedia/commons/5/57/Magnet0873.png>
-10. Example on surrogate and simplified models – <https://pomsmeetings.org/confpapers/005/005-0037.doc>
-11. National Academies text with discussion of modeling and education (example) – <https://nap.nationalacademies.org/read/6322/chapter/13>
-12. GeoGebra – dynamic mathematics software – <https://en.wikipedia.org/wiki/GeoGebra>
-13. Vector representations and unit vector representations of fields – problems of understanding and possible teaching strategies – <https://arxiv.org/abs/2402.11912>
-14. A research-informed graphical tool to visually approach Gauss’ and Stokes’ theorems in vector calculus – <https://arxiv.org/abs/2401.10599>
-15. Using Animated Textures to Visualize Electromagnetic Fields and Energy Flow – <https://arxiv.org/abs/0802.4034>
-16. FieldView: An interactive software tool for exploration of three-dimensional vector fields – <https://arxiv.org/abs/2212.11813>
-17. Training Deep Surrogate Models with Large Scale Online Learning – <https://arxiv.org/abs/2306.16133>
-18. A physics and data co-driven surrogate modeling method for high-dimensional rare event simulation – <https://arxiv.org/abs/2310.00261>
-19. Classical-Quantum correspondence in Lindblad evolution – <https://arxiv.org/abs/2403.09345>
-20. Considerations about the incompleteness of the Ehrenfest’s theorem in quantum mechanics – <https://arxiv.org/abs/2011.04038>
+1. Hyperoperation - <https://en.wikipedia.org/wiki/Hyperoperation>
+2. Ehrenfest theorem - <https://en.wikipedia.org/wiki/Ehrenfest_theorem>
+3. Successor function/ zeration (overview) - <https://googology.fandom.com/wiki/Successor_function>
+4. Intuitive description of cost functions in ML - <https://datascience.stackexchange.com/questions/12413/what-does-it-mean-when-people-say-a-cost-function-is-something-you-want-to-minim>
+5. Introductory explanation of cost functions - <https://www.alooba.com/skills/concepts/machine-learning-11/cost-function/>
+6. Error budgets in reliability engineering (overview) - <https://www.atlassian.com/incident-management/kpis/error-budget>
+7. Error budgets and SLOs - <https://www.nobl9.com/service-level-objectives/error-budget>
+8. Simple introduction to vector fields - <https://intmath.com/blog/mathematics/vector-fields-a-simple-and-painless-introduction-3345>
+9. Example magnetic field visualization image (iron filings) - <https://upload.wikimedia.org/wikipedia/commons/5/57/Magnet0873.png>
+10. Example on surrogate and simplified models - <https://pomsmeetings.org/confpapers/005/005-0037.doc>
+11. National Academies text with discussion of modeling and education (example) - <https://nap.nationalacademies.org/read/6322/chapter/13>
+12. GeoGebra - dynamic mathematics software - <https://en.wikipedia.org/wiki/GeoGebra>
+13. Vector representations and unit vector representations of fields - problems of understanding and possible teaching strategies - <https://arxiv.org/abs/2402.11912>
+14. A research-informed graphical tool to visually approach Gauss’ and Stokes’ theorems in vector calculus - <https://arxiv.org/abs/2401.10599>
+15. Using Animated Textures to Visualize Electromagnetic Fields and Energy Flow - <https://arxiv.org/abs/0802.4034>
+16. FieldView: An interactive software tool for exploration of three-dimensional vector fields - <https://arxiv.org/abs/2212.11813>
+17. Training Deep Surrogate Models with Large Scale Online Learning - <https://arxiv.org/abs/2306.16133>
+18. A physics and data co-driven surrogate modeling method for high-dimensional rare event simulation - <https://arxiv.org/abs/2310.00261>
+19. Classical-Quantum correspondence in Lindblad evolution - <https://arxiv.org/abs/2403.09345>
+20. Considerations about the incompleteness of the Ehrenfest’s theorem in quantum mechanics - <https://arxiv.org/abs/2011.04038>
