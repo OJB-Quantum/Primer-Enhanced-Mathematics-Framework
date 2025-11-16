@@ -282,7 +282,7 @@ For the wind example, one could sketch arrows on a map:
 Wind pattern sketch
 ├─ Short swirling arrows near buildings
 ├─ Long arrows pointing east in open field
-└─ Calm / short arrows in sheltered regions
+└─ Calm/ short arrows in sheltered regions
 ```
 
 This is a **visual vector field**. A magnetic field around a bar magnet can be shown similarly with iron filings lining up along field lines: each tiny filing acts like a micro-arrow showing local field direction and strength.
