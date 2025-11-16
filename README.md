@@ -3,7 +3,7 @@ Towards a mathematical framework for intepretation and expression that assumes a
 
 ---
 
-# A Sort of Zero-Assumption Graduated Mathematics Framework (ZGMF) by Onri Jay Benally (Version 1.0)
+## A Sort of Zero-Assumption Graduated Mathematics Framework (ZGMF) by Onri Jay Benally (Version 1.0)
 
 **Overview:** This framework is a comprehensive standard for building math education content from the ground up with *zero assumptions* beyond basic human language (English) comprehension and very elementary notions of quantity. It introduces mathematical concepts in a **chronologically layered** way (from intuitive stories up to rigorous general forms), augmented by **structural tracks** (covering notation, semantics, assumptions, data, multi-model links, and conceptual bridges). The goal is to guide learners from a 6th-grade level understanding through high school, college, and up to graduate/research level, all within a consistent, gradually evolving presentation.
 
