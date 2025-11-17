@@ -880,13 +880,13 @@ For example, a topic on vector fields might link to open-access vector calculus 
 ### RUBRIC TREE - EXPRESSION AND INTERPRETATION RIGOR (ZERO‑ASSUMPTION STANDARD)
 
 LEGEND FOR MARKS AND MICRO‑CRITERIA
-• Checkmarks: [ ] missing / [~] partial / [x] satisfied
-• Micro‑rubric levels (per major criterion): level 0 label only; level 1 plain paraphrase; level 2 structured English;
+- Checkmarks: [ ] missing / [~] partial / [x] satisfied
+- Micro‑rubric levels (per major criterion): level 0 label only; level 1 plain paraphrase; level 2 structured English;
   level 3 canonical formalism; level 4 counterexamples and generalizations; level 5 proof or derivation and implementation
-• Evidence tags you can attach: example, definition, proof sketch, dataset, pseudocode,
+- Evidence tags you can attach: example, definition, proof sketch, dataset, pseudocode,
   code, history, bridge, units, assumption list
-• Repair toggles: specific assumption or format changes that make the criterion true, with renamed identity as needed
-• Etymology hooks and portmanteaux: memory aids for clarity (Etymology: …, Portmanteau: …)
+- Repair toggles: specific assumption or format changes that make the criterion true, with renamed identity as needed
+- Etymology hooks and portmanteaux: memory aids for clarity (Etymology: …, Portmanteau: …)
 
 ```
 ROOT VERIFICATION — ZERO‑ASSUMPTION ORIENTATION
