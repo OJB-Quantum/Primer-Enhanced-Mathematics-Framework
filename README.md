@@ -24,7 +24,7 @@ A Sort of Zero-Assumption Graduated Mathematics Framework (ZGMF) by Onri Jay Ben
 │   ├─ 1. Phenomenon story
 │   ├─ 2. Qualitative patterns
 │   ├─ 3. Structured English expressions
-│   ├─ 4. Pseudo-mathematics (bracketed terms)
+│   ├─ 4. Pseudo-mathematics/structural mathematics (bracketed terms)
 │   ├─ 5. Canonical mathematical form
 │   ├─ 6. Generalized abstract form
 │   ├─ 7. Cost function & data link
