@@ -877,6 +877,424 @@ For example, a topic on vector fields might link to open-access vector calculus 
 
 ---
 
+### RUBRIC TREE - EXPRESSION AND INTERPRETATION RIGOR (ZERO‑ASSUMPTION STANDARD)
+
+LEGEND FOR MARKS AND MICRO‑CRITERIA
+• Checkmarks: [ ] missing / [~] partial / [x] satisfied
+• Micro‑rubric levels (per major criterion): level 0 label only; level 1 plain paraphrase; level 2 structured English;
+  level 3 canonical formalism; level 4 counterexamples and generalizations; level 5 proof or derivation and implementation
+• Evidence tags you can attach: example, definition, proof sketch, dataset, pseudocode,
+  code, history, bridge, units, assumption list
+• Repair toggles: specific assumption or format changes that make the criterion true, with renamed identity as needed
+• Etymology hooks and portmanteaux: memory aids for clarity (Etymology: …, Portmanteau: …)
+
+```
+ROOT VERIFICATION — ZERO‑ASSUMPTION ORIENTATION
+1. Zero‑assumption clarity is explicitly declared for the reader.
+   [ ] The article says it assumes only everyday English and very basic quantity notions (count and compare).
+   [ ] It discloses reading order and shows that symbols come after words, not before them.
+   [ ] It provides a glossary entry that distinguishes words versus symbols versus roles (variable, parameter, constant).
+   Evidence: definition, example, units
+   Micro‑rubric level goal: level 2 or higher (structured language templates appear before symbols)
+   Etymology: “quantity” from Latin “quantitas” (how much); Portmanteau: “mapchine” (function as mapping machine)
+   Repair toggles:
+     - If missing, add a one‑paragraph preface stating: “We start in English; symbols arrive later with roles.”
+     - If roles are unclear, append a symbol table with roles and units (renames “v” from vague to “velocity [meters per second]”).
+
+2. Entry primers are present (short, concrete, human).
+   2.1 Arithmetic and logic primer (optional but available).
+       [ ] Shows identity elements ( +0, ×1, ^1 ) and invisible defaults (for example, “5” is the same value as “1×5” and “5^1”).
+       [ ] Introduces the hyper‑operation ladder as a scaffold, gently, only to support identity defaults.
+       [ ] Presents a tiny logic refresher (and, or, not), with a two‑by‑two truth table and plain‑English readings.
+       Evidence: example, definition
+       Micro‑rubric level goal: level 1 toward level 2
+       Repair toggles:
+         - If identities are implicit, annotate first equations with faint “×1” or “^1” once, then hide again.
+         - If logic is absent, add a sidebar: “Statements can be true or false; combinations obey simple tables.”
+   2.2 Reading and notation primer.
+       [ ] Lists common symbols with multiple plain readings (for example, “=” as “equals”, “is the same as”).
+       [ ] Explains order of operations and grouping, with at least one changed‑meaning example via parentheses.
+       [ ] Demonstrates an English‑to‑mathematics translation pipeline with a trivial word problem.
+       Evidence: example, definition
+       Micro‑rubric level goal: level 2
+       Repair toggles:
+         - If ambiguity arises, require mandatory parentheses in first uses, then gradually relax.
+
+CHRONOLOGICAL LAYERS — EACH TOPIC FLOWS THROUGH ALL NINE
+3. Layer 1: Phenomenon story (real‑world narrative comes first).
+   [ ] A short, sensory story introduces the idea without symbols.
+   [ ] The story names concrete actors, actions, and changes over time or space.
+   [ ] The story hints at measurable quantities and plausible data you could collect.
+   Evidence: example, dataset (sketch)
+   Micro‑rubric level goal: level 1
+   Etymology: “phenomenon” (Greek phainomenon, “thing that appears”)
+   Repair toggles:
+     - If abstract only, prepend a four‑to‑six sentence narrative that can generate observations.
+
+4. Layer 2: Qualitative patterns (before formulas, show trends).
+   [ ] Presents a small observation table or sketch plot showing pattern shape (increase, decrease, cyclic).
+   [ ] States trend words (“grows”, “levels off”) and contrasts cases (near and far, small and large).
+   [ ] Calls out anomalies and outliers by description, not yet by metrics.
+   Evidence: example, dataset
+   Micro‑rubric level goal: level 1 toward level 2
+   Repair toggles:
+     - Add a minimal five‑row table; draw an axis sketch with arrows or bars; label axes in words with units reserved.
+
+5. Layer 3: Structured English expressions (English shaped like equations).
+   [ ] Introduces named quantities and states relations with templates (“new = old + change”).
+   [ ] Uses consistent noun phrases for quantities and consistent verb phrases for relations (“converts to”).
+   [ ] Shows at least one multi‑step pipeline in structured English before any symbols.
+   Evidence: definition, example
+   Micro‑rubric level goal: level 2
+   Portmanteau: “setknob” (parameter as a setting knob)
+   Repair toggles:
+     - Insert a boxed English template that mirrors the later formula exactly.
+
+6. Layer 4: Pseudo‑mathematics (bracketed near‑mathematics).
+   [ ] Transliterates structured English into near‑mathematics with bracketed descriptors.
+   [ ] Uses arrows (“→”) for “converts to” until equality is justified.
+   [ ] Substitutes symbols only after brackets have clarified role and units.
+   Evidence: example, units
+   Micro‑rubric level goal: level 2 toward level 3
+   Repair toggles:
+     - If too symbolic, re‑expand at least one central formula back into bracketed near‑mathematics.
+
+7. Layer 5: Canonical mathematical form (standard notation, minimal prose).
+   [ ] States the canonical formula or definition with properly introduced symbols.
+   [ ] Declares domains, units, and conditions right at first use.
+   [ ] Includes a tiny worked computation under the canonical form to anchor reading.
+   Evidence: definition, example, units
+   Micro‑rubric level goal: level 3
+   Repair toggles:
+     - If domains or units are missing, annotate them in‑line (for example, x in the real numbers, t greater than or equal to zero, v in meters per second).
+
+8. Layer 6: Generalized abstract form (beyond the instance).
+   [ ] Generalizes to functions or maps, lists domain to codomain, and states existence and uniqueness conditions when relevant.
+   [ ] Shows at least one equivalent formulation or representation (table, graph, formula, words).
+   [ ] Identifies special cases and limiting regimes (discrete to continuous, small to large).
+   Evidence: definition, example
+   Micro‑rubric level goal: level 3 toward level 4
+   Etymology: “function” from Latin “functio” (performance); Portmanteau: “mapchine” (mapping‑machine)
+   Repair toggles:
+     - If too narrow, add a parent “family” narrative and place the instance as a special case.
+
+9. Layer 7: Cost function and data link (how good is the answer).
+   [ ] Defines at least one discrepancy metric between model and observation (absolute, squared, relative).
+   [ ] States an error budget or tolerance threshold and justifies its scale.
+   [ ] Explains how data will be used to estimate or validate parameters; names residuals.
+   Evidence: definition, dataset, example
+   Micro‑rubric level goal: level 3 toward level 4
+   Repair toggles:
+     - If absent, add a single explicit cost with units and a “less than or equal to” tolerance; show one residual plot or table.
+
+10. Layer 8: Compute‑ready implementation (do the thing).
+    [ ] Presents inputs to outputs clearly; provides either pseudocode or runnable code.
+    [ ] Specifies numerical settings (step size, stopping rules) or exact arithmetic as appropriate.
+    [ ] States how computational error is monitored (residual, condition, stability).
+    Evidence: pseudocode, code
+    Micro‑rubric level goal: level 3 toward level 5
+    Etymology: “algorithm” (al‑Khwarizmi); Portmanteau: “errorguard” (stopping rule plus diagnostic)
+    Repair toggles:
+      - If no code, add a ten‑to‑twenty line pseudocode; if code, add a docstring and explicit inputs and outputs.
+
+11. Layer 9: Historical and conceptual notes (who, when, why).
+    [ ] Names at least two historical anchors and explains their contributions in one sentence each.
+    [ ] Indicates conceptual bridges (for example, algebra to geometry, discrete to continuous, classical to quantum).
+    [ ] Mentions at least one modern application or research direction.
+    Evidence: history, bridge
+    Micro‑rubric level goal: level 2 toward level 4
+    Repair toggles:
+      - Append a three‑bullet mini‑timeline and one bridge sentence.
+
+STRUCTURAL TRACKS — RUN THROUGH EVERY TOPIC
+12. Notation track (symbols, units, roles).
+    12.1 Symbol table appears at first real use and is consistent thereafter.
+         [ ] Each symbol gets a one‑line English name and unit (if physical or statistical).
+         [ ] Overloads are avoided or explicitly disambiguated with subscripts or superscripts.
+         [ ] Grouping ((), [], {}) is used to remove ambiguity; order of operations is respected and stated.
+         Evidence: definition, units
+         Micro‑rubric level goal: level 3
+         Repair toggles:
+           - Insert a boxed table; add subscripts for roles (v_car, v_truck); add unit annotations once per section.
+    12.2 Equality, definition, and implication are visually separated.
+         [ ] Uses “≔” or “:=” for definitions, “=” for identity or equality, “⇒” or “⇔” for logical implication or if‑and‑only‑if.
+         [ ] Reads each in English at first use (“means or defines”, “is equal to”, “implies or if and only if”).
+         Evidence: definition
+         Micro‑rubric level goal: level 3
+         Repair toggles:
+           - Replace ambiguous “=” with “≔” in definitions; add one sentence telling the English reading.
+
+13. Semantics track (meaning and constraints).
+    13.1 Dependence and causality are described in English first.
+         [ ] States “what depends on what,” and which variables are inputs versus latent versus outputs.
+         [ ] Distinguishes variables versus parameters versus constants explicitly, with reasons.
+         Evidence: definition
+         Micro‑rubric level goal: level 2 toward level 3
+         Portmanteau: “changemarker” (variable), “setknob” (parameter)
+         Repair toggles:
+           - Add an input‑to‑process‑to‑output diagram and a sentence naming roles.
+    13.2 Domains and ranges are explicit.
+         [ ] Lists domain restrictions (t greater than or equal to 0, x in the integers, absolute value of x less than 1) and why they matter.
+         [ ] Addresses edge cases and singularities (division by zero, non‑invertibility).
+         Evidence: definition, example
+         Micro‑rubric level goal: level 3 toward level 4
+         Repair toggles:
+           - Add a “Domain and Edge Cases” box per core formula with two concrete examples.
+
+14. Assumption track (local and global).
+    14.1 All modeling and mathematical assumptions are listed near first use.
+         [ ] Local assumptions (smoothness, independence, linearity) and global assumptions (closed system, metric choice).
+         [ ] Each assumption has a one‑line “what if it fails” note.
+         Evidence: assumption list
+         Micro‑rubric level goal: level 3 toward level 4
+         Repair toggles:
+           - Insert a two‑column “Assumption / Failure‑mode” mini‑table per section.
+    14.2 When needed, toggles strengthen identities and rename structures.
+         [ ] Example toggles used: normed plus completeness gives a Banach space; inner‑product plus completeness gives a Hilbert space.
+         [ ] When toggled, the text explicitly uses the new name and states the new guarantees.
+         Evidence: definition
+         Micro‑rubric level goal: level 4
+         Repair toggles:
+           - Add a sentence: “We now assume completeness; hence this is a Banach space, enabling fixed‑point guarantees.”
+
+15. Data and cost track (evidence and budgets).
+    15.1 Choice of cost is motivated and units‑consistent.
+         [ ] Absolute, squared, or relative error is justified by context and unit scaling.
+         [ ] Thresholds or tolerance windows are tied to measurement resolution or task needs.
+         Evidence: definition, dataset, units
+         Micro‑rubric level goal: level 3 toward level 4
+         Repair toggles:
+           - Include a unit check; scale or normalize features or errors to comparable magnitudes.
+    15.2 Residual diagnostics are shown, however small.
+         [ ] A residual table or plot or at least a before or after error comparison appears.
+         [ ] Interpretation in words explains under‑fit or over‑fit behavior if relevant.
+         Evidence: example, dataset
+         Micro‑rubric level goal: level 4
+         Repair toggles:
+           - Add a five‑row residual table; add a one‑sentence interpretation (“errors grow with x because …”).
+
+16. Multi‑model track (families and surrogates).
+    16.1 The instance is placed within a family of models.
+         [ ] Names a simpler special case and a richer general case.
+         [ ] Describes when to swap models (regime change).
+         Evidence: definition, example
+         Micro‑rubric level goal: level 3 toward level 4
+         Repair toggles:
+           - Add a line: “This is the constant‑acceleration special case of variable‑acceleration motion.”
+    16.2 Surrogates and approximations are acknowledged as such.
+         [ ] If using linearization or small‑parameter approximations, state regime validity.
+         [ ] If using a data‑driven surrogate, describe training context and limits.
+         Evidence: definition, dataset
+         Micro‑rubric level goal: level 4
+         Repair toggles:
+           - Insert a “Validity Regime” sentence and a parameter range for which claims hold.
+
+17. Bridge track (discrete to continuous, algebra to geometry, classical to quantum).
+    17.1 At least one bridge is articulated clearly in words, then in minimal mathematics.
+         [ ] Discrete update to differential limit; sum to integral; symmetry group to geometric invariants.
+         [ ] States what is conserved or transformed across the bridge.
+         Evidence: bridge
+         Micro‑rubric level goal: level 3 toward level 4
+         Repair toggles:
+           - Add a side‑by‑side: v_{n+1} = v_n + a Δt  if and only if  dv/dt = a as Δt approaches 0, plus one plain English sentence.
+    17.2 A second representation (graph, table, or diagram) is shown for the same relationship.
+         [ ] Confirms reader can move between forms.
+         Evidence: example
+         Micro‑rubric level goal: level 3
+         Repair toggles:
+           - Provide a two‑column “Words if and only if Symbols” micro‑table for a key equivalence.
+
+AUTHORING STANDARD — CONSISTENCY AND READABILITY
+18. Naming consistency and symbol reuse are controlled.
+    [ ] No symbol changes meaning mid‑section; if repurposed, it is reset with a warning.
+    [ ] Conventional letters are preferred; descriptive subscripts break ties.
+    Evidence: definition
+    Micro‑rubric level goal: level 3
+    Repair toggles:
+      - Add a “Symbol Roster” at the start of each major section; lock it for that section.
+
+19. Grouping symbols and visible structure are used liberally at first, then tapered.
+    [ ] Early examples show explicit ( ), [ ], { }, and underbraces to label sub‑expressions.
+    [ ] Later examples reduce explicitness only after mastery is demonstrated.
+    Evidence: example
+    Micro‑rubric level goal: level 2 toward level 3
+    Repair toggles:
+      - Re‑insert parentheses in any ambiguous first occurrence.
+
+20. English to mathematics templating is present.
+    [ ] Each core formula has a one‑line structured English twin.
+    [ ] At least one example is fully translated both ways (Words to Symbols to Words).
+    Evidence: example
+    Micro‑rubric level goal: level 2 toward level 3
+    Portmanteau: “wordquation” (equation in words)
+    Repair toggles:
+      - Add a reversible template box for the central law or definition.
+
+21. Minimal topic template is respected for every concept.
+    [ ] Every concept passes through the nine chronological layers with short artifacts for each.
+    Evidence: example, definition, dataset, pseudocode, code
+    Micro‑rubric level goal: level 3
+    Repair toggles:
+      - Insert any missing layer artifacts (story, data, pseudocode) even as a compact sidebar.
+
+22. Review checklist is visibly applied.
+    [ ] The article includes its own short checklist, ticked by the author or editor.
+    [ ] Discrepancies are noted and deferred explicitly to an appendix or a future version.
+    Evidence: example
+    Micro‑rubric level goal: level 3
+    Repair toggles:
+      - Append a one‑page “Self‑review” with ticks and a short “Next revision” note.
+
+IMPLEMENTATION AND TOOLING — FROM TEXT TO EXECUTION
+23. Human‑readable and machine‑readable artifacts coexist.
+    [ ] Markdown and American Standard Code for Information Interchange show the tree and formulas; a JavaScript Object Notation or “YAML Ain’t Markup Language” schema holds metadata (symbols, units, layers).
+    [ ] At least one automated check passes (symbol consistency, units where relevant).
+    Evidence: code (schema), pseudocode (validator)
+    Micro‑rubric level goal: level 4 toward level 5
+    Repair toggles:
+      - Provide a tiny JavaScript Object Notation file with symbol names and units; add a lint step to verify all symbols used are defined.
+
+24. Compute hooks and reproducibility.
+    [ ] Code blocks have explicit inputs and outputs and deterministic seeds where relevant.
+    [ ] Printed results include units and tolerances; plotting code labels axes in words first.
+    Evidence: code
+    Micro‑rubric level goal: level 4 toward level 5
+    Repair toggles:
+      - Add a function header and a documentation string; echo parameters; validate shapes and units at runtime.
+
+ECOSYSTEM AND EVOLUTION — LONG‑TERM CLARITY
+25. Versioning and change logs exist.
+    [ ] A visible version number; a dated change log with “what changed and why.”
+    Evidence: example
+    Micro‑rubric level goal: level 2
+    Repair toggles:
+      - Add “Version 1.0 — Initial; 1.1 — Added cost and bridges; 1.2 — Added code.”
+
+26. Topic repositories and dependency directed acyclic graphs are shown.
+    [ ] A dependency tree shows prerequisites (from sixth‑grade roots upward).
+    [ ] Each edge names the bridging concept (for example, “ratio to slope”).
+    Evidence: example
+    Micro‑rubric level goal: level 2 toward level 3
+    Repair toggles:
+      - Include a small American Standard Code for Information Interchange tree or bullet dependency list in an appendix.
+
+27. Educational scaffolding across levels.
+    [ ] Each topic is tagged with level (middle, high school, undergraduate, graduate) and entry prerequisites.
+    [ ] Examples scale in complexity with level, not just in length.
+    Evidence: example
+    Micro‑rubric level goal: level 2 toward level 3
+    Repair toggles:
+      - Add per‑level boxes with distinct examples and target outcomes.
+
+28. Research notes and open resources.
+    [ ] At least one open access reference (thesis, the arXiv open‑access preprint repository article, textbook note) is cited for depth.
+    [ ] Citations are used sparingly and described in English for accessibility.
+    Evidence: history
+    Micro‑rubric level goal: level 2 toward level 4
+    Repair toggles:
+      - Add an “Open Door” list: two arXiv preprints with one‑line summaries in plain English.
+
+TOPIC‑AGNOSTIC EXPRESSION AND INTERPRETATION MICRO‑CHECKS (APPLY INSIDE ANY SECTION)
+29. Words before symbols, symbols after words.
+    [ ] First appearance of an idea is always in English; symbols are introduced only after roles are clear.
+    Evidence: example
+    Micro‑rubric level goal: level 2
+    Repair toggles:
+      - Swap paragraph order: description first, symbolization second.
+
+30. Two‑way translation is demonstrated.
+    [ ] For at least one key formula, the article converts Words to Symbols and Symbols to Words, without loss.
+    Evidence: example
+    Micro‑rubric level goal: level 3
+    Repair toggles:
+      - Add a single reversible worked example with both conversions.
+
+31. Units and scales are named plainly.
+    [ ] Every dimensional quantity carries its unit at first use; dimensionless ones are marked as such.
+    Evidence: units
+    Micro‑rubric level goal: level 3
+    Repair toggles:
+      - Append “[unit]” at first symbol use; include one scale example (“one unit here equals …”).
+
+32. Edge cases and failure modes are narrated, not hidden.
+    [ ] The article states where formulas fail or behave unusually and why, in plain language first.
+    Evidence: example
+    Micro‑rubric level goal: level 3 toward level 4
+    Repair toggles:
+      - Add a “When it breaks” box with one concrete counterexample and a fix.
+
+33. Costs and tolerances guard claims.
+    [ ] When comparing model versus data, a cost and a tolerance window are declared and defended.
+    Evidence: definition, dataset
+    Micro‑rubric level goal: level 3 toward level 4
+    Repair toggles:
+      - Add “We accept less than or equal to 0.5 error because instrument resolution is 0.2, variability is 0.3.”
+
+34. Computation is testable and inspectable.
+    [ ] Code prints inputs, outputs, and convergence diagnostics; random seeds are fixed; steps are explained.
+    Evidence: code
+    Micro‑rubric level goal: level 4 toward level 5
+    Repair toggles:
+      - Add a “print configuration” line and a residual check after computation.
+
+35. Bridges are visible and named.
+    [ ] The text explicitly names a bridge (for example, discrete update to derivative limit) and demonstrates it.
+    Evidence: bridge
+    Micro‑rubric level goal: level 3
+    Repair toggles:
+      - Insert a one‑line limit statement and its English paraphrase.
+
+“TRUTH‑BY‑TOGGLE” — IF NOT TRUE, MAKE IT TRUE AND RENAME IDENTITY
+36. Algebraic and analytic structure toggles.
+    [ ] Group plus commutativity gives an Abelian group (now order of operation is irrelevant).
+    [ ] Integral domain plus invertibility of nonzero gives a Field (division now defined).
+    [ ] Normed plus completeness gives a Banach space (Cauchy sequences converge; fixed‑point theorems apply).
+    [ ] Inner‑product plus completeness gives a Hilbert space (orthogonal projections and expansions valid).
+    [ ] Topological space plus a metric generating open sets gives a Metric space (distance arguments lawful).
+    [ ] Riemann integral plus measurable limits gives a Lebesgue integral (limit interchanges justified).
+    Evidence: definition
+    Micro‑rubric level goal: level 4
+    Repair toggles:
+      - Add the needed assumption sentence and update the noun (Banach, Hilbert, and so on) accordingly.
+
+37. Modeling regime toggles.
+    [ ] Deterministic dynamics plus stochastic forcing gives a Stochastic Differential Equation (now noise is modeled, moments have meaning).
+    [ ] Linear program plus convex generalization gives a convex program (global optimality certificates exist).
+    [ ] Graph plus capacities gives a flow network (maximum‑flow and minimum‑cut theorems apply).
+    [ ] Code plus a finite field that is a Galois Field of order p to the k plus linearity gives a linear block code (syndrome decoding defined).
+    Evidence: definition
+    Micro‑rubric level goal: level 4
+    Repair toggles:
+      - Explicitly add the forcing, convexity, capacity, or finite‑field assumption and state the renamed problem class.
+
+VOCABULARY, ETYMOLOGY, AND PORTMANTEAU HOOKS — TO AID EXPRESSION
+38. Vocabulary is presented with memory hooks.
+    [ ] Each high‑leverage term gets: plain reading, formal sibling, etymology, and a playful portmanteau.
+    Evidence: definition
+    Micro‑rubric level goal: level 2
+    Etymology and Portmanteau illustrations:
+      - Function (functio = performance) → Portmanteau: “mapchine”
+      - Parameter (para + metron, beside‑measure) → Portmanteau: “setknob”
+      - Vector (carrier) → Portmanteau: “arrowcar”
+      - Derivative → Portmanteau: “slopeshot”; Integral → Portmanteau: “areaum”
+    Repair toggles:
+      - If absent, append a one‑page glossary with these four columns.
+
+LOCAL MICRO‑RUBRIC LEVEL RATING AT THE LEAF (APPLY TO ANY SUBSECTION)
+39. Leaf rating stencil (copy and paste into each subsection).
+    [ ] level 0: Terms named without explanation.
+    [ ] level 1: Ideas paraphrased in plain English with one small example.
+    [ ] level 2: Structured English template present that mirrors later mathematics.
+    [ ] level 3: Canonical form stated with domains, units, and a tiny computation.
+    [ ] level 4: At least one counterexample or edge case and a generalization or equivalent form.
+    [ ] level 5: Short derivation or proof sketch and a compute‑ready algorithm or code with diagnostics.
+    Evidence: example, definition, proof sketch, pseudocode, code
+    Repair toggles:
+      - Promote to the next level by adding the single missing artifact (for example, add residuals to jump level 3 to level 4).
+```
+
+---
+
 ## References
 
 1. Hyperoperation - <https://en.wikipedia.org/wiki/Hyperoperation>
